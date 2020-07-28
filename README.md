@@ -18,6 +18,6 @@ On the computer side:
 Input Loading Protocol:
   1. Wait for the pi to send a 0x01. 
   2. Send settings as 1 byte: 0b000L4321 (L - Latch trains enable, 4/3/2/1 - Enabled controllers)
-  3. For each of the input/latch arrays, send the length as 4 little endian bytes. Send in 4-3-2-1-L order. If a setting is not active, just skip.
-  4. Send the inputs/latch array as 2 little endian bytes, in 4-3-2-1-L order. One full controller array , then the next, then the next, etc... Skip if not enabled
+  3. For each of the input/latch arrays, send the length as 4 little endian bytes. Send in 1-2-3-4-L order. If a setting is not active, just skip.
+  4. Send the inputs/latch array as 2 little endian bytes, in 1-2-3-4-L order. One full controller array , then the next, then the next, etc... Skip if not enabled
   5. Send anything to tell the PI to start playback.
