@@ -1,4 +1,3 @@
-// Example by Tom Igoe  
 import processing.serial.*; 
 volatile Serial myPort;    // The serial port
 int inputArr[][];
